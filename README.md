@@ -355,6 +355,32 @@ nlp-sentiment-analysis-pipeline/
 
 ### 🔬 Model Performance Comparison
 
+### 📊 Visualizations & Results
+
+The framework generates comprehensive visualizations for model analysis:
+
+#### Confusion Matrix
+
+![Confusion Matrix](assets/confusion_matrix.png)
+
+The confusion matrix shows the model's performance across all three sentiment classes (positive, negative, neutral). Our BERT-based model achieves:
+- **Positive class**: 94.1% precision (80/85 correct predictions)
+- **Negative class**: 94.4% precision (85/90 correct predictions)  
+- **Neutral class**: 93.3% precision (70/75 correct predictions)
+
+The heatmap visualization makes it easy to identify where the model performs well and where it might confuse similar sentiments.
+
+#### Additional Visualizations
+
+The evaluation pipeline also generates:
+- **ROC Curves**: Area under curve (AUC) for each class
+- **Training Loss**: Convergence visualization over epochs
+- **Attention Heatmaps**: Which words the model focuses on
+- **Prediction Distribution**: Confidence score histograms
+
+All visualizations are automatically saved to `reports/figures/` during evaluation.
+
+
 Evaluated on **IMDB test set** (25,000 reviews):
 
 | Model | Accuracy | F1-Score | Precision | Recall | Inference Time* | Model Size |

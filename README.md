@@ -7,7 +7,7 @@
 ![Transformers](https://img.shields.io/badge/🤗-Transformers-yellow.svg)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
-![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF.svg)
+
 ![Code Style](https://img.shields.io/badge/code%20style-black-000000.svg)
 
 **Production-ready sentiment analysis pipeline using state-of-the-art transformer models**
@@ -379,7 +379,6 @@ The evaluation pipeline also generates:
 - **Prediction Distribution**: Confidence score histograms
 
 All visualizations are automatically saved to `reports/figures/` during evaluation.
-
 
 Evaluated on **IMDB test set** (25,000 reviews):
 
